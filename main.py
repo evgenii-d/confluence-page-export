@@ -90,8 +90,8 @@ def main():
             raise KeyError
     except FileNotFoundError:
         sys.exit('config.json not found')
-    except (json.decoder.JSONDecodeError, KeyError):
-        sys.exit('invalid config.json')
+    except (json.decoder.JSONDecodeError, KeyError, AttributeError):
+        sys.exit('Invalid config.json')
 
     output_dir = Path(__file__).parent/'output'
     root_page_id = config['pageId']
