@@ -1,4 +1,4 @@
-# Confluence Page Export
+# Confluence Page Exporter
 
 Export Confluence pages using REST API as `.doc` for given ID while preserving the hierarchy.
 
